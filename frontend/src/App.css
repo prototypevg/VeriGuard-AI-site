@@ -1,0 +1,220 @@
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #0f0f10;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* VeriGuard AI Custom Styles */
+:root {
+  --vg-green: #39843e;
+  --vg-green-dark: #416b44;
+  --vg-white: #FFFFFF;
+  --vg-bg-light: #f7ede1;
+  --vg-text-dark: #1a1a1a;
+  --vg-text-gray: #4a4a4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--vg-green);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: float 8s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-30px) translateX(20px); }
+  50% { transform: translateY(-60px) translateX(-20px); }
+  75% { transform: translateY(-30px) translateX(30px); }
+}
+
+.digital-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(57, 132, 62, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 132, 62, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(57, 132, 62, 0.15);
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(57, 132, 62, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(57, 132, 62, 0.6);
+  }
+}
+
+.chain-line {
+  position: relative;
+  overflow: visible;
+}
+
+.chain-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vg-green) 0%, transparent 100%);
+  animation: flowLine 2s ease-in-out infinite;
+}
+
+@keyframes flowLine {
+  0% { opacity: 0.3; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(10px); }
+  100% { opacity: 0.3; transform: translateX(0); }
+}
+
+.btn-primary-vg {
+  background: var(--vg-green);
+  color: var(--vg-white);
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary-vg:hover {
+  background: var(--vg-green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(57, 132, 62, 0.3);
+}
+
+.btn-secondary-vg {
+  background: transparent;
+  color: var(--vg-green);
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--vg-green);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-secondary-vg:hover {
+  background: var(--vg-green);
+  color: var(--vg-white);
+  transform: translateY(-2px);
+}
