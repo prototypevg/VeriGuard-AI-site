@@ -83,14 +83,6 @@ const Hero = () => {
           </button>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
-        style={{ color: '#FFFFFF', opacity: 0.6 }}
-      >
-        <ArrowDown size={32} />
-      </div>
     </section>
   );
 };
