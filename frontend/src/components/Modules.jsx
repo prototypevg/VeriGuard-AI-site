@@ -1,49 +1,43 @@
 import React from 'react';
-import { Shield, Lock, CreditCard } from 'lucide-react';
+import { Shield, Lock, CreditCard, Users, Building2, Landmark } from 'lucide-react';
 
 const Modules = () => {
-  const modules = [
+  const targetAudiences = [
+    { icon: Users, label: 'Vendedores Digitais' },
+    { icon: Building2, label: 'Marketplaces' },
+    { icon: Landmark, label: 'Bancos & Fintechs' }
+  ];
+
+  const features = [
     {
       icon: Shield,
-      title: 'Trustchain',
-      subtitle: 'Autenticação de Produtos',
-      description:
-        'Para vendedores digitais que precisam autenticar produtos e monitorar com evidência técnica.',
-      features: [
-        'Gera o Evidence Pack: hash, timestamp, assinatura digital e metadados',
+      title: 'Autenticação de Produtos',
+      description: 'Gera o Evidence Pack com hash, timestamp, assinatura digital e metadados da transação',
+      benefits: [
         'Resolve clonagem de produtos',
         'Previne contestação injusta de vendas',
         'Fornece prova técnica em disputas'
-      ],
-      color: '#39843e'
+      ]
     },
     {
       icon: Lock,
-      title: 'Gatekeeper',
-      subtitle: 'Controle de Acesso Comercial',
-      description:
-        'Para marketplaces e plataformas que exigem validação obrigatória antes da liberação comercial.',
-      features: [
-        'Atua como filtro de entrada',
+      title: 'Controle de Acesso Comercial',
+      description: 'Atua como filtro de entrada, validando produtos e vendedores antes da liberação comercial',
+      benefits: [
         'Bloqueia produtos não autenticados',
         'Impede vendedores sem verificação',
         'Protege reputação da plataforma'
-      ],
-      color: '#416b44'
+      ]
     },
     {
       icon: CreditCard,
-      title: 'Finance',
-      subtitle: 'Prevenção de Fraudes Financeiras',
-      description:
-        'Para bancos, fintechs e gateways que enfrentam fraudes como lavagem de dinheiro, cartões clonados e invasão de contas.',
-      features: [
-        'Detecta padrões suspeitos com IA',
-        'Gera alertas com rastreabilidade',
+      title: 'Prevenção de Fraudes Financeiras',
+      description: 'Detecta padrões suspeitos com IA e gera alertas com rastreabilidade completa',
+      benefits: [
         'Previne transações fraudulentas',
+        'Identifica lavagem de dinheiro',
         'Reduz riscos regulatórios e multas'
-      ],
-      color: '#39843e'
+      ]
     }
   ];
 
@@ -52,59 +46,95 @@ const Modules = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#39843e' }}>
-            Módulos da Plataforma
+            A Solução
           </h2>
-          <p className="text-xl" style={{ color: '#4a4a4a' }}>
-            Três soluções integradas para máxima proteção
+          <p className="text-xl mb-8" style={{ color: '#4a4a4a' }}>
+            Um aplicativo integrado para proteção completa
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {modules.map((module, index) => {
-            const Icon = module.icon;
-            return (
-              <div
-                key={index}
-                className="card-hover bg-white rounded-2xl p-8 border-2 shadow-lg"
-                style={{ borderColor: '#f7ede1', animationDelay: `${index * 0.2}s` }}
-              >
+        {/* Main App Card */}
+        <div className="fade-in-up bg-white rounded-3xl p-10 md:p-12 shadow-2xl border-2 mb-12" style={{ borderColor: '#39843e' }}>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-6" style={{ backgroundColor: '#39843e' }}>
+              <Shield size={48} style={{ color: '#FFFFFF' }} />
+            </div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#39843e' }}>
+              VeriGuard AI - Confiança Digital
+            </h3>
+            <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto" style={{ color: '#4a4a4a' }}>
+              Um aplicativo completo que combina autenticação de produtos, controle de acesso comercial 
+              e prevenção de fraudes financeiras em uma única plataforma integrada.
+            </p>
+          </div>
+
+          {/* Target Audiences */}
+          <div className="mb-12">
+            <p className="text-center text-lg font-semibold mb-6" style={{ color: '#416b44' }}>
+              Desenvolvido para:
+            </p>
+            <div className="flex flex-wrap justify-center gap-6">
+              {targetAudiences.map((audience, index) => {
+                const Icon = audience.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex items-center space-x-3 px-6 py-3 rounded-xl bg-white shadow-md"
+                    style={{ border: '2px solid #39843e' }}
+                  >
+                    <Icon size={24} style={{ color: '#39843e' }} />
+                    <span className="font-semibold" style={{ color: '#39843e' }}>
+                      {audience.label}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
                 <div
-                  className="w-16 h-16 rounded-xl flex items-center justify-center mb-6"
-                  style={{ backgroundColor: module.color }}
+                  key={index}
+                  className="bg-white rounded-xl p-6 shadow-md border"
+                  style={{ borderColor: '#f7ede1' }}
                 >
-                  <Icon size={32} style={{ color: '#FFFFFF' }} />
-                </div>
-
-                <h3 className="text-2xl font-bold mb-2" style={{ color: '#39843e' }}>
-                  {module.title}
-                </h3>
-                <p className="text-sm font-semibold mb-4" style={{ color: '#416b44' }}>
-                  {module.subtitle}
-                </p>
-                <p className="text-base mb-6 leading-relaxed" style={{ color: '#4a4a4a' }}>
-                  {module.description}
-                </p>
-
-                <div className="space-y-3">
-                  <p className="font-semibold text-sm" style={{ color: '#39843e' }}>
-                    Resolve:
+                  <div
+                    className="w-14 h-14 rounded-lg flex items-center justify-center mb-4"
+                    style={{ backgroundColor: '#39843e' }}
+                  >
+                    <Icon size={28} style={{ color: '#FFFFFF' }} />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3" style={{ color: '#39843e' }}>
+                    {feature.title}
+                  </h4>
+                  <p className="text-sm mb-4 leading-relaxed" style={{ color: '#4a4a4a' }}>
+                    {feature.description}
                   </p>
-                  <ul className="space-y-2">
-                    {module.features.map((feature, fIndex) => (
-                      <li
-                        key={fIndex}
-                        className="flex items-start space-x-2 text-sm"
-                        style={{ color: '#4a4a4a' }}
-                      >
-                        <span style={{ color: '#39843e', fontWeight: 'bold' }}>•</span>
-                        <span>{feature}</span>
-                      </li>
+                  <div className="space-y-2">
+                    {feature.benefits.map((benefit, bIndex) => (
+                      <div key={bIndex} className="flex items-start space-x-2">
+                        <span style={{ color: '#39843e', fontWeight: 'bold', fontSize: '1.2em' }}>✓</span>
+                        <span className="text-sm" style={{ color: '#4a4a4a' }}>
+                          {benefit}
+                        </span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Bottom Statement */}
+        <div className="text-center fade-in-up">
+          <p className="text-lg md:text-xl font-semibold" style={{ color: '#416b44' }}>
+            Uma única solução para proteger vendedores, marketplaces e instituições financeiras
+          </p>
         </div>
       </div>
     </section>
