@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
             <div className="text-left">
               <p className="text-sm font-semibold mb-1" style={{ color: '#416b44' }}>
-                E-mail institucional
+                E-mail
               </p>
               <a
                 href="mailto:contatoveriguard@gmail.com"
