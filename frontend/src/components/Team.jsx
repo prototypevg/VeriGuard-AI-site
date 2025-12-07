@@ -1,5 +1,4 @@
 import React from 'react';
-import { User } from 'lucide-react';
 
 const Team = () => {
   return (
@@ -16,12 +15,12 @@ const Team = () => {
 
         <div className="fade-in-up bg-white rounded-2xl p-10 shadow-lg">
           <div className="flex flex-col items-center text-center">
-            <div
-              className="w-32 h-32 rounded-full flex items-center justify-center mb-6"
-              style={{ backgroundColor: '#39843e' }}
-            >
-              <User size={64} style={{ color: '#FFFFFF' }} />
-            </div>
+            <img
+              src="https://customer-assets.emergentagent.com/job_secure-verify-18/artifacts/v1icnk5d_WhatsApp%20Image%202025-12-07%20at%2012.11.04.jpeg"
+              alt="Carlos Martins"
+              className="w-32 h-32 rounded-full object-cover mb-6 shadow-lg"
+              style={{ border: '4px solid #39843e' }}
+            />
 
             <h3 className="text-3xl font-bold mb-3" style={{ color: '#39843e' }}>
               Carlos Martins
