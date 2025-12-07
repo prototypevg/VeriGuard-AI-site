@@ -29,9 +29,9 @@ const Team = () => {
               Fundador e Idealizador
             </p>
             <p className="text-lg leading-relaxed max-w-2xl" style={{ color: '#4a4a4a' }}>
-              Especialista em tecnologia e inovação digital, com visão estratégica para segurança comercial. 
-              Desenvolvi a VeriGuard AI para resolver problemas reais de autenticidade, fraude e confiança 
-              no ambiente digital. Acredito que a evidência técnica é a base para um mercado mais seguro e transparente.
+              Especialista em inovação digital, com visão estratégica para segurança comercial. 
+              Com 16 anos, desenvolvi a VeriGuard AI para resolver problemas de autenticidade, fraude e confiança 
+              no ambiente digital. Acredito que a VeriGuard AI é a base para um mercado mais seguro e transparente.
             </p>
           </div>
         </div>
