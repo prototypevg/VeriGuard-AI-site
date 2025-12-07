@@ -11,7 +11,7 @@ const Footer = () => {
 
   const footerLinks = [
     { name: 'Início', href: '#inicio' },
-    { name: 'Soluções', href: '#modulos' },
+    { name: 'Solução', href: '#modulos' },
     { name: 'Tecnologia', href: '#como-funciona' },
     { name: 'Contato', href: '#contato' }
   ];
