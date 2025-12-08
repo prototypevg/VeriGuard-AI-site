@@ -51,7 +51,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t text-center" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
           <p className="text-sm" style={{ color: '#f7ede1' }}>
-            © 2025 VeriGuard AI. Startup em desenvolvimento. Todos os direitos reservados.
+            © 2025 VeriGuard AI - Startup em desenvolvimento. Todos os direitos reservados.
           </p>
         </div>
       </div>

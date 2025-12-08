@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 px-6 lg:px-8" style={{ backgroundColor: '#FFFFFF' }}>
+    <section id="contato" className="py-20 px-1 lg:px-8" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="max-w-4xl mx-auto text-center">
         <div className="fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#39843e' }}>
@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
 
           <div
-            className="inline-flex items-center space-x-4 p-8 rounded-2xl shadow-lg"
+            className="inline-flex items-center space-x-3 p-2 rounded-2xl shadow-lg"
             style={{ backgroundColor: '#f7ede1' }}
           >
             <div

@@ -63,7 +63,7 @@ const Hero = () => {
             className="text-xl md:text-2xl font-semibold mb-4"
             style={{ color: '#f7ede1' }}
           >
-            Confiança digital com evidência técnica
+            Sua plataforma antifraude com provas digitais confiáveis
           </p>
           <p
             className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed"

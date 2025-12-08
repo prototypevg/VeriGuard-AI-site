@@ -5,7 +5,7 @@ const Modules = () => {
   const targetAudiences = [
     { icon: Users, label: 'Vendedores Digitais' },
     { icon: Building2, label: 'Marketplaces' },
-    { icon: Landmark, label: 'Bancos & Fintechs' }
+    { icon: Landmark, label: 'Bancos, Fintechs & Gateways' }
   ];
 
   const features = [
@@ -46,7 +46,7 @@ const Modules = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#39843e' }}>
-            A Solução
+           A Solução
           </h2>
           <p className="text-xl mb-8" style={{ color: '#4a4a4a' }}>
             Um aplicativo integrado para proteção completa

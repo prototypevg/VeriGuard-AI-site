@@ -30,7 +30,7 @@ const Team = () => {
             </p>
             <p className="text-lg leading-relaxed max-w-2xl" style={{ color: '#4a4a4a' }}>
               Especialista em inovação digital, com visão estratégica para segurança comercial. 
-              Com 16 anos, desenvolvi a VeriGuard AI para resolver problemas de autenticidade, fraude e confiança 
+              Com 16 anos, eu desenvolvi a VeriGuard AI para resolver problemas de autenticidade, fraude e confiança 
               no ambiente digital. Acredito que a VeriGuard AI é a base para um mercado mais seguro e transparente.
             </p>
           </div>

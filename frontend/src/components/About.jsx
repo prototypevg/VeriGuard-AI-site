@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1a1a1a' }}>
               Ainda não lançada oficialmente, buscamos investimento para desenvolver e
-              aplicar essa tecnologia no mercado real.
+              aplicar essa tecnologia no mercado.
             </p>
 
             <div
