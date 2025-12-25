@@ -16,7 +16,7 @@ const Team = () => {
         <div className="fade-in-up bg-white rounded-2xl p-10 shadow-lg">
           <div className="flex flex-col items-center text-center">
             <img
-              src="https://customer-assets.emergentagent.com/job_secure-verify-18/artifacts/v1icnk5d_WhatsApp%20Image%202025-12-07%20at%2012.11.04.jpeg"
+              src="https://customer-assets.emergentagent.com/job_secure-verify-18/artifacts/ygdin0z6_file_00000000e93071f59473bde54172135c.png"
               alt="Carlos Martins"
               className="w-32 h-32 rounded-full object-cover mb-6 shadow-lg"
               style={{ border: '4px solid #39843e' }}
