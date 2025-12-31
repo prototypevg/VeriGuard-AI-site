@@ -7,6 +7,7 @@ import Modules from './components/Modules';
 import HowItWorks from './components/HowItWorks';
 import WhyItMatters from './components/WhyItMatters';
 import Team from './components/Team';
+import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -20,6 +21,7 @@ function App() {
       <HowItWorks />
       <WhyItMatters />
       <Team />
+      <CTA />
       <Contact />
       <Footer />
     </div>
