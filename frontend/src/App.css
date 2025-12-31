@@ -183,6 +183,15 @@ html {
   100% { opacity: 0.3; transform: translateX(0); }
 }
 
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
 .btn-primary-vg {
   background: var(--vg-green);
   color: var(--vg-white);
@@ -367,6 +376,15 @@ html {
   0% { opacity: 0.3; transform: translateX(0); }
   50% { opacity: 1; transform: translateX(10px); }
   100% { opacity: 0.3; transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
 }
 
 .btn-primary-vg {
