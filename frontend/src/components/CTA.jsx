@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, MessageCircle } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 const CTA = () => {
   const scrollToContact = () => {
@@ -17,36 +17,24 @@ const CTA = () => {
             Pronto para Transformar a Segurança Digital?
           </h2>
           <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: '#f7ede1' }}>
-            Seja um dos primeiros a experimentar a VeriGuard AI e fazer parte da revolução na autenticação digital
+            Seja um dos primeiros a experimentar o protótipo da VeriGuard AI e fazer parte da nossa revolução na autenticação digital
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            {/* Botão Teste o Protótipo */}
+          <div className="flex justify-center">
+            {/* Botão Fale Conosco */}
             <button
               onClick={scrollToContact}
-              className="group relative px-8 py-5 rounded-xl font-bold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl w-full sm:w-auto"
+              className="group relative px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl"
               style={{ backgroundColor: '#FFFFFF', color: '#39843e' }}
             >
               <div className="flex items-center justify-center space-x-3">
-                <Rocket size={24} className="group-hover:animate-bounce" />
-                <span>Teste o Protótipo</span>
+                <MessageCircle size={28} className="group-hover:rotate-12 transition-transform duration-300" />
+                <span>Fale Conosco</span>
               </div>
               <div
                 className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ background: 'linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 100%)' }}
               ></div>
-            </button>
-
-            {/* Botão Fale Conosco */}
-            <button
-              onClick={scrollToContact}
-              className="group relative px-8 py-5 rounded-xl font-bold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl w-full sm:w-auto"
-              style={{ backgroundColor: 'transparent', color: '#FFFFFF', border: '3px solid #FFFFFF' }}
-            >
-              <div className="flex items-center justify-center space-x-3">
-                <MessageCircle size={24} className="group-hover:rotate-12 transition-transform duration-300" />
-                <span>Fale Conosco</span>
-              </div>
             </button>
           </div>
 
