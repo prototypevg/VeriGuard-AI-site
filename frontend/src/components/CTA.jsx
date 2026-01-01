@@ -37,31 +37,8 @@ const CTA = () => {
               ></div>
             </button>
           </div>
-
-          {/* Decorative Elements */}
-          <div className="mt-12">
-            <div className="relative w-64 h-1 mx-auto rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(247, 237, 225, 0.2)' }}>
-              <div
-                className="absolute top-0 left-0 h-full w-1/3 rounded-full"
-                style={{
-                  backgroundColor: '#f7ede1',
-                  animation: 'shimmer 2s ease-in-out infinite'
-                }}
-              ></div>
-            </div>
-          </div>
         </div>
       </div>
-      <style jsx>{`
-        @keyframes shimmer {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(300%);
-          }
-        }
-      `}</style>
     </section>
   );
 };
